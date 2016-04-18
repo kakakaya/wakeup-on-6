@@ -4,6 +4,7 @@
 from pprint import pprint as p
 import click
 import toml
+import datetime
 
 
 @click.command()
@@ -12,6 +13,8 @@ def main(config):
     with open(config) as tf:
         bot_config = toml.loads(tf.read())
     p(bot_config)
+    now = datetime.datetime.now()
+    print(bot_config["message"].format(current=now, delta=3))
 
 if __name__ == "__main__":
     main()

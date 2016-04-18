@@ -1,1 +1,24 @@
-key = "value"
+# 設定名
+profile = "6時に起きよう"
+
+# messageには以下の要素がキーワード引数の形で渡されてformatされる
+# current: 現在の時刻(datetime)
+# delta: 指定時刻までの時間(datetime.hour)
+# 例:
+message = "もう{current.hour}時だよ!あと{delta}時間しか眠れないよ!"
+
+# この時刻からカウントダウンを始める
+countdown_start_time = 20
+# 残りがこの時間になったらカウントダウンをやめる
+countdown_end_hours = 5
+# countdown_end_hoursを切ったら以下のメッセージを出力して終了する
+sleep_message = "それではもう寝ます。おやすみなさい。"
+
+[weekdays]
+sun = 6.0
+mon = 6.0
+tue = 6.0
+wed = 6.0
+thu = 6.0
+fri = 6.0
+sat = 6.0
