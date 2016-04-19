@@ -7,18 +7,19 @@ profile = "6時に起きよう"
 # 例:
 message = "もう{current.hour}時だよ!あと{delta}時間しか眠れないよ!"
 
-# この時刻からカウントダウンを始める
-countdown_start_time = 20
+# 残りがこの時間になったらカウントダウンを始める
+countdown_start_hours = 12
+
 # 残りがこの時間になったらカウントダウンをやめる
 countdown_end_hours = 5
 # countdown_end_hoursを切ったら以下のメッセージを出力して終了する
 sleep_message = "それではもう寝ます。おやすみなさい。"
 
 [weekdays]
-sun = 6.0
-mon = 6.0
-tue = 6.0
-wed = 6.0
-thu = 6.0
-fri = 6.0
-sat = 6.0
+sun = "6:00"
+mon = "6:00"
+tue = "6:00"
+wed = "6:00"
+thu = "6:00"
+fri = "6:00"
+sat = "6:00"
